@@ -14,6 +14,13 @@ function App() {
       children: [
         {
           path: '/',
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz');
+          },
+          element: <Home></Home>
+        },
+        {
+          path: 'home',
           element: <Home></Home>
         },
         {
@@ -28,6 +35,7 @@ function App() {
           path: 'blog',
           element: <Blog></Blog>
         },
+        {path: '*', element: <div>404 Not found</div>}
       ]
     }
   ])
