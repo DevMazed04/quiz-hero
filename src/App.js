@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Topics from './components/Topics/Topics';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
+import Page404 from './components/Page404/Page404';
 
 function App() {
   const router = createBrowserRouter([
@@ -35,7 +36,7 @@ function App() {
           path: 'blog',
           element: <Blog></Blog>
         },
-        {path: '*', element: <div>404 Not found</div>}
+        { path: '*', element: <Page404></Page404> }
       ]
     }
   ])

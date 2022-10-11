@@ -1,0 +1,13 @@
+.notfound {
+   height: 100vh;
+}
+
+.notfound .notfound-404 {
+   height: 100px;
+   line-height: 110px;
+   margin-bottom: 20px;
+}
+
+.notfound .notfound-404 h1 {
+   font-size: 100px;
+}
