@@ -14,8 +14,7 @@ const Topics = () => {
             {
                topics.map(topic => <Topic
                   key={topic.id}
-                  topic={topic}
-               >
+                  topic={topic}>
                </Topic>)
             }
          </div>

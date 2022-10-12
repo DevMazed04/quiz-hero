@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Topic.css';
-import { ChevronDoubleRightIcon } from '@heroicons/react/24/solid'
+import { ChevronDoubleRightIcon } from '@heroicons/react/24/solid';
 
 const Topic = ({ topic }) => {
   // console.log('topic.js props:', topic);

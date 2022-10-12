@@ -5,14 +5,13 @@ import TopicDetail from '../TopicDetail/TopicDetail';
 const TopicDetails = () => {
    const topicDetailsData = useLoaderData();
    const topicDetails = topicDetailsData.data;
-   console.log('topicDetails.js:', topicDetails);
+   // console.log('topicDetails.js:', topicDetails);
 
    return (
       <div>
          <TopicDetail
             key={topicDetails.id}
-            topicDetails={topicDetails}
-         >
+            topicDetails={topicDetails}>
          </TopicDetail>
       </div>
    );
