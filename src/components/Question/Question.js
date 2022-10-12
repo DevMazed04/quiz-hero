@@ -9,7 +9,21 @@ const Question = (props) => {
   question = question.replaceAll("</p>", " ");
 
   const showAnswer = (correctAnswer) => {
-    console.log(correctAnswer);
+    // console.log(correctAnswer);
+  }
+
+  const handleAnswer = (option, correctAnswer) => {
+    console.log('option:', option);
+    console.log('correctAnswer:', correctAnswer);
+
+    if (option === correctAnswer) {
+      console.log('correct');
+      alert('correct');
+    }
+    else {
+      console.log('wrong');
+      alert('wrong');
+    }
   }
 
   return (
@@ -30,12 +44,12 @@ const Question = (props) => {
             {
               options.map((option, index) => <Option
                 key={index}
-                option={option}>
+                option={option}
+                correctAnswer={correctAnswer}
+                handleAnswer={handleAnswer}>
               </Option>)
             }
           </div>
-
-
         </div>
       </div>
     </div>

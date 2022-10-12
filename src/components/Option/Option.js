@@ -1,7 +1,7 @@
 import React from 'react';
 import './Option.css';
 
-const Option = ({ option, handleAnswer }) => {
+const Option = ({ option, correctAnswer, handleAnswer }) => {
 
   return (
     <div className="col">
@@ -11,7 +11,7 @@ const Option = ({ option, handleAnswer }) => {
             <input className="form-check-input mt-0" type="radio" value="" />
           </div> */}
 
-          <p className="card-text pe-5" onClick={handleAnswer}>{option}</p>
+          <p className="card-text pe-5" onClick={() => handleAnswer(option, correctAnswer)}>{option}</p>
         </div>
       </div>
     </div>
