@@ -6,15 +6,16 @@ import './Topics.css';
 const Topics = () => {
    const topicsData = useLoaderData();
    const topics = topicsData.data;
-   console.log('topics', topics);
+   console.log('topics.js:', topics);
 
    return (
       <div>
-         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 mx-auto mt-5 mb-5 topics">
+         <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 mx-auto mt-5 mb-5 topics">
             {
                topics.map(topic => <Topic
-                  key={topic.id}>
+                  key={topic.id}
                   topic={topic}
+               >
                </Topic>)
             }
          </div>

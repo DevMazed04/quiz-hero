@@ -5,8 +5,8 @@ import './Page404.css';
 const Page404 = () => {
    return (
       <div>
-         <div class="notfound d-flex flex-column justify-content-center align-items-center">
-            <div class="notfound-404">
+         <div className="notfound d-flex flex-column justify-content-center align-items-center">
+            <div className="notfound-404">
                <h1>404</h1>
             </div>
             <h2>Oops! This Page Could Not Be Found</h2>
