@@ -18,7 +18,7 @@ const ViewAnswer = ({ correctAnswer, showAnswer }) => {
    return (
       <div>
          <button className='btn btn-sm' onClick={showToast}>
-            <EyeIcon className="icon" onClick={() => showAnswer(correctAnswer)} />
+            <EyeIcon className="icon" onClick={showAnswer} />
          </button>
 
          <ToastContainer

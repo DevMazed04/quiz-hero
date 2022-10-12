@@ -1,5 +1,6 @@
 import React from 'react';
 import './Option.css';
+import CheckAnswer from '../CheckAnswer/CheckAnswer';
 
 const Option = ({ option, correctAnswer, handleAnswer }) => {
 
@@ -11,7 +12,13 @@ const Option = ({ option, correctAnswer, handleAnswer }) => {
             <input className="form-check-input mt-0" type="radio" value="" />
           </div> */}
 
-          <p className="card-text pe-5" onClick={() => handleAnswer(option, correctAnswer)}>{option}</p>
+          {/* <p className="card-text pe-5" onClick={() => handleAnswer(option, correctAnswer)}>{option}</p> */}
+
+          <CheckAnswer
+            option={option}
+            correctAnswer={correctAnswer}
+            handleAnswer={handleAnswer}>
+          </CheckAnswer>
         </div>
       </div>
     </div>
