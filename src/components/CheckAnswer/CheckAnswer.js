@@ -45,8 +45,7 @@ const CheckAnswer = ({ option, correctAnswer, handleAnswer }) => {
             rtl={false}
             pauseOnFocusLoss
             draggable
-            pauseOnHover
-         />
+            pauseOnHover />
       </div>
    );
 };
