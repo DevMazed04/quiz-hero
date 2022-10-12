@@ -22,9 +22,10 @@ const Blog = () => {
             data-bs-parent="#accordionExample">
             <div className="accordion-body text-secondary px-0 pe-3 px-lg-4 pb-3 px-3 text-start">
               <small>
-                <b>React</b> is a declarative, efficient, and flexible JavaScript library for building user interfaces. While building client-side apps, the DOM (Document Object MOdel) become slow. So, to make it faster, React implements a virtual DOM that is basically a DOM tree representation in JavaScript. So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browser's DOM.
-                Unlike browser DOM elements, React elements are plain objects and are cheap to create. React DOM takes care of updating the DOM to match the React elements. The reason for this is that JavaScript is very fast and it's worth keeping a DOM tree in it to speed up its manipulation.
-                Although React was conceived to be used in the browser, because of its design it can also be used in the server with Node.js.
+                <b>React Router</b> is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.
+                It plays an important role to display multiple views in a single page application. Without React Router, it is not possible to display multiple views in React applications. Most of the social media websites like Facebook, Instagram uses React Router for rendering multiple views.
+                It is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.
+                React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.
               </small>
             </div>
           </div>
@@ -43,11 +44,8 @@ const Blog = () => {
             data-bs-parent="#accordionExample">
             <div className="accordion-body text-secondary px-0 pe-3 px-lg-4 pb-3 px-3 text-start">
               <small>
-                <b>1)</b>  Props are read-only, where State changes can be asynchronous, <br />
-                <b>2)</b> Props are immutable but State is mutable, <br />
-                <b>3)</b> Props allow you to pass data from one component to other components as an argument, where State holds information about the components, <br />
-                <b>4)</b> Props can be accessed by the child component but State cannot be accessed by child components, <br />
-                <b>5)</b> Props are used to communicate between components, where States can be used for rendering dynamic changes with the component.
+                <b>Context API</b> is a new feature added in version 16.3 of React that allows one to share state across the entire app or part of it lightly and with ease. it is a React API that can solve a lot of problems that modern applications face related to state management and how they are passing state to their components. The Context API can be used to share data with multiple components, without having to pass data through props manually.
+                React.createContext() is all needed. It returns a consumer and a provider. Provider is a component that as it's names suggests provides the state to its children. It will hold the "store" and be the parent of all the components that might need that store. Consumer as it so happens is a component that consumes and uses the state. The Context API gives you a dependency injection system based on your component tree. This wasn't possible in React before and it also integrates very well with function components and hooks. As we saw above it was easy to implement encapsulated logic for the translated options with react-intl, which also uses context internally. In situations where you have logic and configuration that needs to be accessed by multiple components but doesn't interact with or depend on external modules, writing your own contexts can be beneficial.
               </small>
             </div>
           </div>
@@ -66,10 +64,11 @@ const Blog = () => {
             data-bs-parent="#accordionExample">
             <div className="accordion-body text-secondary px-0 pe-3 px-lg-4 pb-3 px-3 text-start">
               <small>
-                <b>1)</b> The useEffect hook allows us to handle side effects such as logging, making asynchronous calls, or setting values on local storage, <br />
-                <b>2)</b> Running once on mount: fetch API data, <br />
-                <b>3)</b> Running on state change: validating input field, live filtering, trigger animation on new array value, <br />
-                <b>4)</b> Running on props change: update paragraph list on fetched API data update,  updating fetched API data to get BTC updated price.
+                The <b>useRef</b> Hook allows us to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
+                useRef returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component. This hook accepts one argument, which is the value to initialize the property current in the returned object. In order to use the hook useRef , you will have to import it from the React package first.
+                What makes useRef powerful is that it's persisted between renders. It is very similar to useState , but it doesn't cause a component to re-render when changed.
+                One of the most common use cases of the hook useRef in React is to reference a DOM element.
+                Since every DOM element has a property ref , we can use the hook useRef for setting a ref to that element. The hook useRef is one of the important and useful React hooks that you need to know. It allows you to access DOM elements directly, and persist data between renders without causing a component to re-render infinitely when changes.
               </small>
             </div>
           </div>
