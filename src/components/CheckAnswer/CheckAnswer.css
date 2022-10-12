@@ -1,0 +1,15 @@
+.btn-width {
+   width: 100%;
+}
+
+.option {
+   margin-bottom: -30px;
+   padding: 15px;
+   padding-left: 40px;
+   padding-right: 0px;
+}
+
+.option:hover {
+   background-color: rgb(218, 240, 245);
+   cursor: pointer;
+}

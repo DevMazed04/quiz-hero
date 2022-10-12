@@ -6,9 +6,9 @@ import img from '../../images/devMazed.png'
 const Header = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg nav-bg">
+      <nav className="navbar navbar-expand-lg nav-bg navbar-dark">
         <div className="container">
-          <Link className="navbar-brand fw-bold text-primary opacity-75" to="/">Quiz Hero</Link>
+          <Link className="navbar-brand fw-bold" to="/">Quiz Hero</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -18,13 +18,13 @@ const Header = () => {
                 <Link className="nav-link active" aria-current="page" to="home">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="topics">Topics</Link>
+                <Link className="nav-link active" to="topics">Topics</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="statistics">Statistics</Link>
+                <Link className="nav-link active" to="statistics">Statistics</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="blog">Blog</Link>
+                <Link className="nav-link active" to="blog">Blog</Link>
               </li>
             </ul>
             <span className="navbar-text">

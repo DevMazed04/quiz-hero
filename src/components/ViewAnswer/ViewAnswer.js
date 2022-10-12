@@ -7,7 +7,7 @@ const ViewAnswer = ({ correctAnswer, showAnswer }) => {
    const showToast = () =>
       toast.success(correctAnswer, {
          position: "top-center",
-         autoClose: 2000,
+         autoClose: 1000,
          hideProgressBar: true,
          closeOnClick: true,
          pauseOnHover: true,
@@ -25,7 +25,7 @@ const ViewAnswer = ({ correctAnswer, showAnswer }) => {
             theme="dark"
             position="top-center"
             autoClose={2000}
-            hideProgressBar={true}
+            hideProgressBar={false}
             newestOnTop={false}
             closeOnClick
             rtl={false}

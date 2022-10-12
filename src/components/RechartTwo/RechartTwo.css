@@ -1,0 +1,9 @@
+.rechart-two {
+   margin: 0 auto;
+}
+
+@media only screen and (min-width:280px) and (max-width:575px) {
+   .rechart-two {
+      margin-left: -50px;
+   }
+}

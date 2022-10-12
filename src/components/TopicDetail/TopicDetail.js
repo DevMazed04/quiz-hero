@@ -11,7 +11,7 @@ const TopicDetail = ({ topicDetails }) => {
       <div>
          <h3 className='mt-5 mb-5'>Quiz of {name}</h3>
 
-         <div className="row row-cols-1 row-cols-md-1 g-5 question-div mx-auto">
+         <div className="row row-cols-1 row-cols-sm-1 g-5 question-div mx-auto">
             {
                questions.map((question, index) => <Question
                   key={question.id}

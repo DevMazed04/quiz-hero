@@ -1,3 +1,7 @@
 .topics {
    width: 93%;
 }
+
+.topic-header {
+   width: 200px;
+}

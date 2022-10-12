@@ -3,6 +3,12 @@
 }
 
 .header-bg {
-   /* background-color: rgb(220, 244, 252); */
    background-color: white;
+}
+
+@media only screen and (min-width:280px) and (max-width:575px) {
+
+   .header {
+      width: 85%;
+   }
 }

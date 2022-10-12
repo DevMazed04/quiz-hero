@@ -1,3 +1,10 @@
 .question-div {
    width: 60%;
 }
+
+@media only screen and (min-width:280px) and (max-width:575px) {
+
+   .question-div {
+      width: 97%;
+   }
+}

@@ -1,13 +1,14 @@
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './CheckAnswer.css';
 
 const CheckAnswer = ({ option, correctAnswer, handleAnswer }) => {
    if (option === correctAnswer) {
       var showToast = () =>
          toast.success("Correct Answer", {
             position: "top-center",
-            autoClose: 300,
+            autoClose: 500,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
@@ -19,7 +20,7 @@ const CheckAnswer = ({ option, correctAnswer, handleAnswer }) => {
       showToast = () =>
          toast.error("Wrong Answer", {
             position: "top-center",
-            autoClose: 200,
+            autoClose: 300,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
@@ -30,9 +31,9 @@ const CheckAnswer = ({ option, correctAnswer, handleAnswer }) => {
 
    return (
       <div>
-         <button className='btn btn-sm' onClick={showToast}>
+         <div className='w-100 border rounded-3 option text-center' onClick={showToast}>
             <p className="card-text pe-5" onClick={handleAnswer}>{option}</p>
-         </button>
+         </div>
 
          <ToastContainer
             theme="dark"

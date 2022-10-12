@@ -1,0 +1,9 @@
+.rechart {
+   margin: 0 auto;
+}
+
+@media only screen and (min-width:280px) and (max-width:575px) {
+   .rechart {
+      margin-left: -30px !important;
+   }
+}
